@@ -25,7 +25,7 @@ npm run start
 
 ## Authors
 
-- [@musaktel](https://www.github.com/muskatel)
+- [@muskatel](https://www.github.com/muskatel)
 
 
 ## License
