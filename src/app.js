@@ -24,15 +24,17 @@ const app = express()
 app.use(morgan('dev'))
 
 // initialise body parsing for json
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParserer.json())
+app.use(bodyParserer.urlencoded({ extended: true }))
 
 // GET / -> sends src/welcome.html
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/welcome.html'))
+  res.sendFile(
+    path.join(__dirname, '../public/welcome.html')
+  )
 })
 
 // start the server
 app.listen(port, () => {
-  console.log('Server started on port: ', port)
+  console.log('Server started on port:', port)
 })
