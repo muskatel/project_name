@@ -16,7 +16,7 @@ npm install
     
 ## Usage/Examples
 
-Run the project
+Run the project using this command
 
 ```bash
 npm run start
